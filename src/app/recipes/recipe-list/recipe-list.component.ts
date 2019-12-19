@@ -7,7 +7,10 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
-  recipes: Recipe[] = [];
+  recipes: Recipe[] = [
+    new Recipe('First Recipe', 'just description',
+    'https://www.wholesomeyum.com/wp-content/uploads/2019/09/wholesomeyum-keto-chaffles-recipe-sweet-savory-5-ways-24.jpg')
+  ];
 
   constructor() { }
 
